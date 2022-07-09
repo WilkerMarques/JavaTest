@@ -14,7 +14,7 @@ public class EncomendaService {
     private IEncomendaRepository repository;
 
     public void criar(EncomendaDto obj) {
-
+//teste subir
         Encomenda mod = converteModel(obj);
         mod.setId(null);
         try {
