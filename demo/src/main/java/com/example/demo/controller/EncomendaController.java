@@ -8,21 +8,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dto.EncomendaDto;
+import com.example.demo.dto.EntradaEncomendaDto;
+import com.example.demo.dto.SaidaEncomendaDto;
 import com.example.demo.service.EncomendaService;
 
 @RestController
 @RequestMapping(path = "/api")
 public class EncomendaController {
-
+    
     @Autowired
-    private EncomendaService service;
+    private EncomendaService encomendaService;
 
     @PostMapping(path = "/encomendas")
-    public ResponseEntity<?> post(@RequestBody EncomendaDto objDto) {
+    public ResponseEntity<?> post(@RequestBody EntradaEncomendaDto objDto) {
         try {
-            service.criar(objDto);
-            return ResponseEntity.ok().body(true);
+            SaidaEncomendaDto saidaEncomendaDto = encomendaService.salvarConsulta(objDto);
+            return ResponseEntity.ok().body(saidaEncomendaDto);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }

@@ -1,6 +1,6 @@
 package com.example.demo.dto;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ import lombok.Setter;
 public class SaidaEncomendaDto {
 
     private Double vlTotalFrete;
-    private Date dataPrevistaEntrega;
+    private LocalDate dataPrevistaEntrega;
     private String cepOrigem;
     private String cepDestino;
 

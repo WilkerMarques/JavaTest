@@ -1,13 +1,13 @@
 package com.example.demo.dto;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class EncomendaDto {
+public class EncomendaDto{
 
     private Long id;
     private Double peso;
@@ -15,6 +15,6 @@ public class EncomendaDto {
     private String cepDestino;
     private String nomeDestinatario;
     private Double vlTotalFrete;
-    private Date dataPrevistaEntrega;
-    private Date dataConsulta;
+    private LocalDate dataPrevistaEntrega;
+    private LocalDate dataConsulta;
 }
