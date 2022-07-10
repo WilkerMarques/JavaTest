@@ -1,9 +1,9 @@
-package com.example.demo.repository;
+package com.example.sigabem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.model.Encomenda;
+import com.example.sigabem.model.Encomenda;
 
 @Repository
 public interface IEncomendaRepository extends JpaRepository<Encomenda, Long>{

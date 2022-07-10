@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.sigabem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dto.EntradaEncomendaDto;
-import com.example.demo.dto.SaidaEncomendaDto;
-import com.example.demo.service.EncomendaService;
+import com.example.sigabem.dto.EntradaEncomendaDto;
+import com.example.sigabem.dto.SaidaEncomendaDto;
+import com.example.sigabem.service.EncomendaService;
 
 @RestController
 @RequestMapping(path = "/api")

@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.sigabem.dto;
 
 import java.time.LocalDate;
 

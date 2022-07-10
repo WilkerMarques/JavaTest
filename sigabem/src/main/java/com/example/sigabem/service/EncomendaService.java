@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.sigabem.service;
 
 import java.time.LocalDate;
 
@@ -8,12 +8,12 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.example.demo.dto.CepDto;
-import com.example.demo.dto.EncomendaDto;
-import com.example.demo.dto.EntradaEncomendaDto;
-import com.example.demo.dto.SaidaEncomendaDto;
-import com.example.demo.model.Encomenda;
-import com.example.demo.repository.IEncomendaRepository;
+import com.example.sigabem.dto.CepDto;
+import com.example.sigabem.dto.EncomendaDto;
+import com.example.sigabem.dto.EntradaEncomendaDto;
+import com.example.sigabem.dto.SaidaEncomendaDto;
+import com.example.sigabem.model.Encomenda;
+import com.example.sigabem.repository.IEncomendaRepository;
 
 @Service
 public class EncomendaService {

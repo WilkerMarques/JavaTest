@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.sigabem;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -12,8 +12,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 @SpringBootApplication
-@EntityScan("com.example.demo.model")
-public class DemoApplication {
+@EntityScan("com.example.sigabem.model")
+public class SigaBemApplication {
 
 	
 	public class Configuration{
@@ -31,6 +31,6 @@ public class DemoApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SigaBemApplication.class, args);
 	}
 }
